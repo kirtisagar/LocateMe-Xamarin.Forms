@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 
 using Xamarin.Forms.Platform.Android;
+using Parse;
 
 
 namespace LocateMe.Android
@@ -23,6 +24,8 @@ namespace LocateMe.Android
 			Xamarin.Forms.Forms.Init (this, bundle);
 
 			SetPage (App.GetMainPage ());
+
+			ParseClient.Initialize ("hXXW5OH2FtyLKaStLnTscsyUhAMmLbByOrt4Srxb", "rvAZ1WRC1FdjXJBzYkpLOrzWthLeXG8sEpGF7lu4");
 		}
 	}
 }
